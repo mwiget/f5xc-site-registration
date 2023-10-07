@@ -15,3 +15,21 @@ variable "f5xc_api_ca_cert" {
   default = ""
 }
 
+variable "cluster_name" {
+  type = string
+  default = ""
+}
+
+variable "private_network_name" {
+  type = string
+  default = ""
+}
+variable "latitude" {
+  type = string
+  default = "47.1"
+}
+
+variable "longitude" {
+  type = string
+  default = "8.5"
+}
