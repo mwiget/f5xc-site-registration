@@ -1,0 +1,4 @@
+f5xc_api_url      = "https://playground.console.ves.volterra.io/api"
+f5xc_api_p12_file = "./playground.console.ves.volterra.io.api-creds.p12"
+f5xc_api_token    = "............................"
+
