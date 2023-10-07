@@ -2,8 +2,8 @@
 list pending registrations for a given tenant
 
 Copy terraform.tfvars.example to terraform.tfvars and adjust tenant and api key
-and set cluster_name to the site you want to approve. It is used to filter the pending registrations
-plus latitude and longitude.
+and set cluster_name, lat/longitude and optionally private_network_name for the site you want to approve. 
+Cluster name is used to filter the pending registrations.
 
 Caveat:
 
