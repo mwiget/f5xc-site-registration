@@ -251,3 +251,25 @@ pending_registrations = [
 ]
 ```
 
+The output still shows the pending registrations after being applied, because those are created via data resource and used to 
+create the approve rest api calls.
+
+Use `terraform plan` to check if there are pending registrations:
+
+```
+$ terraform plan 
+
+data.http.registrations: Reading...
+data.http.registrations: Read complete after 1s [id=https://playground.console.ves.volterra.io/api/register/namespaces/system/listregistrationsbystate]
+
+Changes to Outputs:
+  + all_pending_registrations = {}
+  + approve                   = []
+  + pending_registrations     = []
+
+You can apply this plan to save these new output values to the Terraform state, without changing any real infrastructure.
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+```
